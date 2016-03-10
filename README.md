@@ -6,7 +6,7 @@ Throws an error when environment variables are not defined.
 
 ```js
 var needsEnv = require('needs-env');
-needsEnv('ENV_VAR', 'OTHER_ENV_VAR').onProd('PROD_ONLY_ENV_VAR');
+needsEnv('ENV_VAR', 'OTHER_ENV_VAR').inProd('PROD_ONLY_ENV_VAR');
 ```
 
 ## API
@@ -14,7 +14,7 @@ needsEnv('ENV_VAR', 'OTHER_ENV_VAR').onProd('PROD_ONLY_ENV_VAR');
 `needsEnv(string, string...)` - will throw if any of the passed strings is not
 present in `process.env`.
 
-`needsEnv().onProd(string, string...)` - will throw if any of the passed strings
+`needsEnv().inProd(string, string...)` - will throw if any of the passed strings
 is not present in `process.env` and `process.env.NODE_ENV === 'production'`
 
 ## Install
