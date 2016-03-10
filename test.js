@@ -1,7 +1,7 @@
 'use strict';
 
 var assert = require('assert');
-var needsEnv = require('.');
+var needsEnv = require('./index');
 
 function subject() {
   needsEnv('A', 'B').inProd('C', 'D');
