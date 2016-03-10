@@ -4,7 +4,7 @@
   "description": "Throws an error when environment variables are not defined.",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "eslint . && node test.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sagansystems/needs-env/issues"
   },
-  "homepage": "https://github.com/sagansystems/needs-env#readme"
+  "homepage": "https://github.com/sagansystems/needs-env#readme",
+  "devDependencies": {
+    "eslint": "^2.3.0"
+  }
 }
