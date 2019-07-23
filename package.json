@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/sagansystems/needs-env#readme",
   "devDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^6.1.0"
   }
 }
